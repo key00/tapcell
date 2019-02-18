@@ -1,0 +1,19 @@
+# main app setup
+
+## change port if necessary
+server:
+  port: 8081
+
+# Spring Config
+spring:
+  cache:
+    type: redis
+  redis:
+    host: localhost
+    port: 6379
+    catch:
+      time: 20
+  data:
+    mongodb:
+      database: tapcell
+      port: 27017
